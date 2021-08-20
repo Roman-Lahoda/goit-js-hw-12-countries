@@ -1,0 +1,96 @@
+body {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(79, 79, 82, 0.85),
+      rgba(76, 76, 78, 0.85),
+      rgba(72, 72, 75, 0.85),
+      rgba(69, 69, 71, 0.85),
+      rgba(65, 65, 67, 0.85),
+      rgba(62, 62, 63, 0.85),
+      rgba(58, 58, 60, 0.85),
+      rgba(55, 55, 56, 0.85),
+      rgba(51, 51, 52, 0.85),
+      rgba(48, 48, 48, 0.85),
+      rgba(44, 44, 45, 0.85),
+      rgba(41, 41, 41, 0.85)
+    ),
+    url(../images/map.jpg);
+  background-repeat: no-repeat;
+  //   background-position: center;
+  background-size: 100vw 100vh, cover;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 30px;
+  width: 440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.countries {
+  margin-top: 50px;
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.input {
+  border-radius: 15px;
+  display: block;
+  width: 400px;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border-color: inherit;
+  border-style: ridge;
+  outline: none;
+  //   text-align: center;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.name-of-country {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.country {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#result-js {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.country__information {
+  margin: 20px;
+}
+
+.country__flag {
+  width: 300px;
+  height: auto;
+}
+.country__flag__img {
+  width: 100%;
+  height: auto;
+}
+
+.flag-in-list {
+  width: 20px;
+  height: auto;
+}
