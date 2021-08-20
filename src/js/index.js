@@ -9,17 +9,22 @@ import countriesMurkup from "../templates/countries-list";
 export const refs = {
   input: document.querySelector("#input-js"),
   result: document.querySelector("#result-js"),
+  clear: document.querySelector(".clear"),
 };
 
+const onClear = () => {
+  refs.input.value = "";
+  refs.result.innerHTML = "";
+};
+
+refs.clear.addEventListener("click", onClear);
+
 const showOneCounrty = obj => {
-  console.log(obj);
   const murkup = countryMurkup(obj);
   refs.result.innerHTML = murkup;
-  //   console.log(test);
 };
 
 const showManyCountry = obj => {
-  console.log(obj);
   const murkup = countriesMurkup(obj);
   refs.result.innerHTML = murkup;
 };
@@ -37,7 +42,6 @@ const createMarkup = promiseResult => {
     showManyCountry(promiseResult);
   } else if (promiseResult.length > 10) {
     showAllert();
-    // console.log(promiseResult);
   } else {
     error({
       text: "Not found",
@@ -66,42 +70,3 @@ const result = () => {
 
 const country = debounce(result, 500);
 refs.input.addEventListener("input", country);
-
-//
-
-//
-
-//
-
-// fetchCountries("ame")
-//   .then(result => result.json())
-//   .then(result => console.log(result));
-
-// alert({
-//   text: "Notice me, senpai!",
-// });
-
-// console.log(
-//   fetchCountries("america")
-//     .then(response => response.json())
-//     .then(result => console.log(result)),
-// );
-
-// const body = document.querySelector("body");
-
-// function flag(url) {
-//   const imgFlag = document.createElement("img");
-//   imgFlag.setAttribute("src", url);
-//   body.insertAdjacentElement("beforeend", imgFlag);
-// }
-
-// const test = () => {
-//   console.log("hello");
-// };
-
-// const testsecond = debounce(test, 500);
-
-// // testsecond();
-
-// const input = document.querySelector("#input");
-// input.addEventListener("input", testsecond);
