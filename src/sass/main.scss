@@ -19,11 +19,11 @@ body {
   background-size: 100vw 100vh, cover;
 }
 
-.title {
-  font-size: 20px;
+.section-title {
+  font-size: 30px;
   font-weight: normal;
-  margin-bottom: 30px;
-  width: 440px;
+  margin-bottom: 40px;
+  width: 650px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -66,7 +66,7 @@ body {
 .country {
   display: flex;
   justify-content: center;
-  width: 500px;
+  width: 600px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -100,10 +100,11 @@ body {
 
 .clear {
   background-color: transparent;
+  font-size: 30px;
   outline: none;
   border: none;
   position: absolute;
-  top: 57px;
+  top: 68px;
   right: 155px;
   cursor: pointer;
 }
@@ -113,6 +114,25 @@ body {
   padding-left: 50px;
 }
 
-.counrty-item {
-  margin-bottom: 10px;
+.country-item {
+  display: list-item;
+  margin-bottom: 20px;
+  // cursor: pointer;
+}
+.countries-name {
+  cursor: pointer;
+}
+
+.country-link {
+  text-decoration: none;
+  display: block;
+  margin-left: 490px;
+  padding-bottom: 20px;
+}
+.title {
+  font-size: 20px;
+  font-weight: 600;
+}
+.more-info {
+  font-size: 20px;
 }

@@ -1,5 +1,8 @@
 <ul class="country-list">
+    <p class="more-info">Chosee one to see more information</p>
     {{#each this}}
-    <li class="counrty-item"> <img class="flag-in-list" src="{{flag}}" alt="flag of {{name}}"> {{name}} <a class="country-link" href="https://en.wikipedia.org/wiki/{{name}}">(Go to Wikipedia)</a></li>
+    <li class="country-item"> 
+        <img class="flag-in-list" src="{{flag}}" alt="flag of {{name}}"><span class="countries-name">         {{name}}</span> 
+    </li>
     {{/each}}
 </ul>

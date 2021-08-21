@@ -2,9 +2,9 @@
 <p class="name-of-country">{{name}}</p>
 <div class="country ">
     <div class="country__information">
-        <p>Capital: {{capital}}</p>
-        <p>Population: {{population}}</p>
-        <p>Languages:</p>
+        <p> <span  class="title">Capital: </span> {{capital}}</p>
+        <p> <span  class="title">Population: </span> <span class="population-js">{{population}}</span></p>
+        <p> <span  class="title">Languages: </span></p>
         <ul>
             {{#each languages}}
             <li>{{name}}</li>
@@ -13,4 +13,5 @@
     </div>
     <div class="country__flag"><img class="country__flag__img" src="{{flag}}" alt="Flag of {{name}}"></div>
 </div>
+<a class="country-link" target="blank" href="https://en.wikipedia.org/wiki/{{name}}">go to wikipedia</a>
 {{/each}}
